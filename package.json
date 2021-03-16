@@ -1,0 +1,13 @@
+{
+  "name": "ts-course",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:wenealves10/ts-course.git",
+  "author": "Wene Alves de Oliveira <weneplay5@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^9.1.1",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.2.3"
+  }
+}

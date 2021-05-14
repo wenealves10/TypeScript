@@ -9,7 +9,7 @@ enum Steps {
   FiveSteps,
 }
 
-function stepsEnum(title: Steps): void {
+function stepsEnum(title: number): void {
   console.log(Steps[title]);
 }
 

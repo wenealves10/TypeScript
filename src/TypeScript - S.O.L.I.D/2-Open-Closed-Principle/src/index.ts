@@ -1,15 +1,15 @@
-import { NoDiscount } from './classes/discount';
+import { FiftyPercentDiscount } from './classes/discount';
 import { Order } from './classes/order';
 import { Product } from './classes/product';
 import { ShoppingCart } from './classes/shopping-cart';
 import { Messaging } from './services/messaging';
 import { Persistency } from './services/persistency';
 
-// const fiftyPercentDiscount = new FiftyPercentDiscount();
+const fiftyPercentDiscount = new FiftyPercentDiscount();
 // const tenPercentDiscount = new TenPercentDiscount();
-const noDiscount = new NoDiscount();
+// const noDiscount = new NoDiscount();
 
-const shoppingCart = new ShoppingCart(noDiscount);
+const shoppingCart = new ShoppingCart(fiftyPercentDiscount);
 const messaging = new Messaging();
 const persistency = new Persistency();
 const order = new Order(shoppingCart, messaging, persistency);

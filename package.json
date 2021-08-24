@@ -7,7 +7,9 @@
   "license": "MIT",
   "scripts": {
     "build:frontend": "npx webpack -w",
-    "build:backend": "node tsc"
+    "build:backend": "node tsc",
+    "test": "jest",
+    "test:silent":"jest --watchAll --silent --noStackTrace"
   },
   "devDependencies": {
     "@types/jest": "^27.0.1",
